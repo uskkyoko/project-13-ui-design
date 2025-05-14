@@ -1,0 +1,35 @@
+
+[
+  {
+    "id": 1,
+    "title": "Gear",
+    "imageUrl": "images/gear.jpg",
+    "link": "//www.wilson.com/en-us/blog/tennis/how-tos/how-choose-tennis-racket",
+    "id":"gear",
+    "external": true
+  },
+  {
+    "id": 2,
+    "title": "Book a court",
+    "imageUrl": "images/courts.jpg",
+    "link": "#",
+    "id":"court",
+    "external": false
+  },
+  {
+    "id": 3,
+    "title": "Group trainings",
+    "imageUrl": "images/groups.jpg",
+    "link": "group.html",
+    "id":"training",
+    "external": false
+  },
+  {
+    "id": 4,
+    "title": "Choose a coach",
+    "imageUrl": "images/coaches.jpg",
+    "link": "//www.forbes.com/councils/forbescoachescouncil/2024/01/24/five-key-questions-to-choose-the-right-coach/",
+    "id":"coaching",
+    "external": true
+  }
+]

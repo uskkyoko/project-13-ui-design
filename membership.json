@@ -1,0 +1,11 @@
+{
+  "title": "Become a member",
+  "description": "Elevate Your Game—Become a Member Today",
+  "formFields": [
+    { "type": "text", "placeholder": "Enter your name" },
+    { "type": "text", "placeholder": "Enter your email" },
+    { "type": "text", "placeholder": "Enter your phone number" },
+    { "type": "text", "placeholder": "Enter your address" }
+  ],
+  "buttonText": "Submit"
+}

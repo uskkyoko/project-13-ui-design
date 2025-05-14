@@ -1,0 +1,36 @@
+{
+  "title": "Meet our team",
+  "description": "Experienced Coaches and Dedicated Staff Committed to Your Success",
+  "coaches": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "image": "images/coach1.jpg",
+      "description": "Specializes in youth development, building confidence and passion for tennis."
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "image": "images/coach2.jpg",
+      "description": "Focused on improving strength, agility, and overall game performance."
+    },
+    {
+      "id": 3,
+      "name": "Michele Smith",
+      "image": "images/coach3.jpg",
+      "description": "10+ years of experience, specializing in competitive training and mental strategies"
+    },
+    {
+      "id": 4,
+      "name": "Abdul",
+      "image": "images/coach4.jpg",
+      "description": "Expert in teaching all ages with a fun, engaging approach to skill development."
+    },
+    {
+      "id": 5,
+      "name": "Ahmed",
+      "image": "images/coach5.jpg",
+      "description": "Specializes in advanced techniques and refining player tactics."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "navigation": {
+    "logo": {
+      "image": "images/logo.svg",
+      "alt": "Tennis court logo",
+      "width": 33,
+      "text": "UTC",
+      "link": "index.html"
+    },
+    "links": [
+      { "text": "Club Rules", "url": "info.html" },
+      { "text": "Club Directory", "url": "#club_directory" },
+      { "text": "Club Guide", "url": "#club_guide" },
+      { "text": "Our Coaches", "url": "#our_coaches" },
+      { "text": "Become a member", "url": "#membership" }
+    ]
+  },
+  "hero": {
+    "title": "UTC Tennis Club",
+    "subtitle": "Experience Tennis Like Never Before",
+    "description": "Elite Coaching | Premium Courts | Exclusive Community",
+    "buttons": [
+      { "text": "Become a member", "class": "primary", "link": "#membership" },
+      { "text": "Book a court", "class": "secondary", "link": "#" }
+    ],
+    "arrow": {
+      "image": "images/arrow.svg",
+      "alt": "Arrow"
+    }
+  },
+  "directory": {
+    "title": "Club Directory",
+    "description": "Your Complete Guide to Courts, Programs, and Membership Services"
+  },
+  "clubGuide": {
+    "title": "Club Guide",
+    "subtitle": "Where Elegance Meets Excellence",
+    "videoSrc": "images/Tennis Club tour.mp4",
+    "heading": "Your game deserves the best.",
+    "description": "Step into a world of refined tennis. Watch our video tour and discover world-class courts, premium facilities, and an exclusive club experience designed for the elite.",
+    "buttonText": "Become a member",
+    "buttonLink": "#membership"
+  },
+  "footer": {
+    "logo": {
+      "image": "images/logo.svg",
+      "alt": "Tennis court logo",
+      "width": 100,
+      "text": "UTC"
+    },
+    "socials": [
+      { "platform": "Website", "icon": "images/Website.svg", "link": "index.html" },
+      { "platform": "Instagram", "icon": "images/Instagram.svg", "link": "https://www.instagram.com" },
+      { "platform": "Facebook", "icon": "images/Facebook.svg", "link": "https://www.facebook.com" },
+      { "platform": "Maps", "icon": "images/Maps.svg", "link": "https://www.google.com/maps" }
+    ],
+    "copyright": "Copyright Uliana Sova @2025 | Portfolio purpose only"
+  }
+}

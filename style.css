@@ -1,0 +1,638 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.hero h1, 
+.directory h2, 
+.guide-text h2, 
+.heading h2, 
+.coaches h2, 
+.membership h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a4a5a;
+    padding: 10px 20px;
+    color: white;
+    height: 50px;
+}
+.nav-links {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px; 
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    display: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #ccc;
+}
+.hero {
+    position: relative;
+    padding: 20px;
+    background: url("images/headimage.jpg") no-repeat center center/cover;
+}
+.hero-text{
+    position: relative;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+.hero h1,
+.hero h2,
+.hero p,
+.navbar,
+.nav-links,
+.primary,
+.secondary,
+.arrow {
+    position: relative;
+    z-index: 1;
+}
+.hero h1 {
+    color : white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.hero h2 {
+    display: none;
+    color : white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.hero p {
+    display: none;
+    color : white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.arrow{
+    text-align: center;
+    align-items: baseline;
+    color : white;
+    font-size: 16px;
+    animation: moveDownFade 2s infinite ease-in-out;
+}
+@keyframes moveDownFade {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.logo{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.button {
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.primary:hover {
+    transform: translateY(-5px);
+}
+.secondary:hover {
+    transform: translateY(-5px);
+}
+.primary {
+    font-weight: bold;
+    font-size: 16px;
+    height: 60px;
+    width: 200px;
+    color:#4a4a5a;
+    background-color: white;
+    transition:  transform 0.3s ease;
+}
+.secondary {
+    text-align: center;
+    display: none;
+    font-weight: bold;
+    font-size: 16px;
+    height: 60px;
+    width: 150px;
+    background-color: #4a4a5a;
+    color: white;
+    transition: transform 0.3s ease;
+}
+.directory {
+    text-align: center;
+    padding: 40px 20px;
+    background-color:  #14080E;
+}
+.directory-grid {
+    display: grid;
+    grid-template-columns:  1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+}
+.directory-item {
+    height: 342px;
+    width:100%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.directory-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.directory-item span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.gear {
+    grid-column: 1;  
+    grid-row: 1;     
+}
+
+.court {
+    grid-column: 1;  
+    grid-row: 2;    
+}
+
+.training {
+    grid-column: 1;  
+    grid-row: 3; 
+}
+
+.coaching {
+    grid-column: 1;  
+    grid-row: 4; 
+}
+.directory h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+.directory p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.directory-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.guide-container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.guide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.guide-video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.guide-video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+.guide-text {
+    color: #4a4a5a;
+    max-width: 400px;
+    text-align: center;
+    gap: 0;
+}
+.guide-text h3 {
+    font-family: 'Merriweather', serif;
+    font-style:normal;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+.member:hover {
+    transform: translateY(-5px);
+}
+.member{
+    font-weight: bold;
+    font-size: 16px;
+    height: 60px;
+    width: 200px;
+    background-color: #4a4a5a;
+    color: white;
+    transition: transform 0.3s ease;
+}
+.heading {
+    color: #4a4a5a;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+.separator {
+    width:100%;
+    height: 1px;
+    background-color: #4a4a5a;
+    margin: 20px auto;
+}
+.coaches {
+    padding: 20px 20px;
+    text-align: center;
+    background-color: white;
+}
+.coaches-grid {
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
+}
+.coach {
+    width: 100%; 
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.coach img {
+    object-position: 20% top;
+    width: 100%;
+    height: 400px;  
+    object-fit: cover;  
+    cursor: pointer;
+    border-radius: 10px;
+}
+.coach h3{
+    font-size: 20px;
+    font-style: bold;
+    color:#4a4a5a;
+}
+.coach p{
+    font-size: 16px;
+    color:#4a4a5a;
+    margin-top: 10px;
+}
+.coaches p{
+    color: #4a4a5a;
+    margin-bottom: 40px;
+}
+.coaches-grid p{
+    display: none;
+    color: #4a4a5a;
+    margin-bottom: 0;
+}
+.coaches h2 {
+    color: #4a4a5a;
+    margin-bottom: 10px;
+}
+
+.membership {
+    height: 650px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    background: url("images/ctaimage.jpg") no-repeat center center/cover;
+    color:#14080E;
+}
+.membership::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+.membership h2,
+.membership p,
+.membership .cta-form {
+    position: relative;
+    z-index: 1;
+}
+.cta-form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+}
+.cta-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+.button.cta {
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    color: #14080E;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom:80px;
+}
+.button.cta:hover {
+    background-color: #14080E;
+    color: white;
+}
+.membership h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+}
+.membership p {
+    font-size: 16px;
+    margin-bottom: 70px;
+    color: white;
+}
+.footer{
+    height: 450px;
+    text-align: center;
+    padding: 80px;
+    background-color: #14080E;
+    color: white;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer-logo-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.footer-logo-text a{
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.footer-logo a{
+    padding: 40px;
+    color: white;
+    cursor: pointer;
+}
+.footer p{
+    margin-top: 100px;
+    align-items: baseline;
+    font-size: 12px;
+}
+.footer socials-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+.socials-grid a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 744px) {
+    .nav-links {
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 20px; 
+        display: flex;
+        gap: 20px;
+    }
+    .nav-links a {
+        display: flex;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+        color: #ccc;
+    }
+
+    .burger{
+        display: none;
+    }
+    
+    .hero-text{
+        position: relative;
+        height: 525px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        padding: 20px;
+        margin-left: 70px;
+        font-weight: lighter;
+    }
+    .hero p{
+        display: flex;
+    }
+    .hero h2 {
+        display: flex;
+
+    }
+    .secondary{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .directory-grid {
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+        padding: 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .gear {
+        grid-column: 1;  
+        grid-row: 1;     
+    }
+    
+    .court {
+        grid-column: 1;  
+        grid-row: 2 !important;    
+    }
+    
+    .training {
+        grid-column: 2 ;  
+        grid-row: span 2 !important; 
+    }
+    
+    .coaching {
+        grid-column: 3;  
+        grid-row: span 2; 
+    }
+    .directory-item {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .guide-content {
+        gap: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 1440px;
+        width: 100%;
+    }
+    .guide-video {
+        align-items: left;
+        width: 750px;
+        height: 390px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+    .guide-text{
+        text-align: left;
+    }
+
+    .coaches-grid {
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+        padding: 20px;
+        max-width: 1400px;
+        margin: auto;
+    }
+    .coach {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .coach img {
+        width: 100%;  
+        height: 312px;  
+        object-fit: cover;  
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .coaches-grid p{
+        display: flex;
+        color: #4a4a5a;
+        margin-bottom: 40px;
+    }
+    .cta-form {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin: auto;
+    }
+
+    
+}
+
+
+
+
